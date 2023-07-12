@@ -8,7 +8,7 @@
 import RxSwift
 import RxCocoa
 
-struct CategoryModelView {
+struct CategoryViewModel {
     let disposeBag = DisposeBag()
     
     // ViewModel -> View

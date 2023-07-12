@@ -7,18 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124A66F62A459FEC00A99F9B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A66F52A459FEC00A99F9B /* MainViewModel.swift */; };
+		124A66FA2A45A9A600A99F9B /* TitleTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A66F92A45A9A600A99F9B /* TitleTextFieldCellViewModel.swift */; };
+		12697F392A4EFC1500ABD5AF /* PriceTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12697F382A4EFC1500ABD5AF /* PriceTextFieldCell.swift */; };
+		12697F3C2A4F082500ABD5AF /* DetailWriteFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12697F3B2A4F082500ABD5AF /* DetailWriteFormCell.swift */; };
+		12697F3E2A4F083C00ABD5AF /* DetailWriteFormCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12697F3D2A4F083C00ABD5AF /* DetailWriteFormCellViewModel.swift */; };
+		12697F412A4F1C0200ABD5AF /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12697F402A4F1C0200ABD5AF /* MainModel.swift */; };
+		129699BE2A45B29C002AF8A3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 129699BD2A45B29C002AF8A3 /* RxCocoa */; };
+		129699C02A45B29C002AF8A3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 129699BF2A45B29C002AF8A3 /* RxRelay */; };
+		129699C22A45B29C002AF8A3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 129699C12A45B29C002AF8A3 /* RxSwift */; };
+		129699C42A45B5A7002AF8A3 /* TitleTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129699C32A45B5A7002AF8A3 /* TitleTextFieldCell.swift */; };
+		129699C62A45B96C002AF8A3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129699C52A45B96C002AF8A3 /* Category.swift */; };
+		129699CB2A45BA69002AF8A3 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129699CA2A45BA69002AF8A3 /* CategoryViewModel.swift */; };
+		129699CD2A45BAEC002AF8A3 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129699CC2A45BAEC002AF8A3 /* CategoryListViewController.swift */; };
 		12A1EFD62A40896B005856DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A1EFD52A40896B005856DB /* AppDelegate.swift */; };
 		12A1EFD82A40896B005856DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A1EFD72A40896B005856DB /* SceneDelegate.swift */; };
 		12A1EFDF2A40896C005856DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A1EFDE2A40896C005856DB /* Assets.xcassets */; };
 		12A1EFE22A40896C005856DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A1EFE02A40896C005856DB /* LaunchScreen.storyboard */; };
-		12A1EFEB2A4089A8005856DB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 12A1EFEA2A4089A8005856DB /* RxCocoa */; };
-		12A1EFED2A4089A8005856DB /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 12A1EFEC2A4089A8005856DB /* RxRelay */; };
-		12A1EFEF2A4089A8005856DB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 12A1EFEE2A4089A8005856DB /* RxSwift */; };
 		12A1EFF22A4089C3005856DB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 12A1EFF12A4089C3005856DB /* SnapKit */; };
 		12A1EFF42A4089DE005856DB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A1EFF32A4089DE005856DB /* MainViewController.swift */; };
+		12D5CF162A4B152900BD26E9 /* PriceTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D5CF152A4B152900BD26E9 /* PriceTextFieldCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		124A66F52A459FEC00A99F9B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		124A66F92A45A9A600A99F9B /* TitleTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		12697F382A4EFC1500ABD5AF /* PriceTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCell.swift; sourceTree = "<group>"; };
+		12697F3B2A4F082500ABD5AF /* DetailWriteFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWriteFormCell.swift; sourceTree = "<group>"; };
+		12697F3D2A4F083C00ABD5AF /* DetailWriteFormCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWriteFormCellViewModel.swift; sourceTree = "<group>"; };
+		12697F402A4F1C0200ABD5AF /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		129699C32A45B5A7002AF8A3 /* TitleTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextFieldCell.swift; sourceTree = "<group>"; };
+		129699C52A45B96C002AF8A3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		129699CA2A45BA69002AF8A3 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		129699CC2A45BAEC002AF8A3 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		12A1EFD22A40896B005856DB /* UsedGoodsUpload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsedGoodsUpload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A1EFD52A40896B005856DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12A1EFD72A40896B005856DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +47,7 @@
 		12A1EFE12A40896C005856DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A1EFE32A40896C005856DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12A1EFF32A4089DE005856DB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		12D5CF152A4B152900BD26E9 /* PriceTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,16 +55,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A1EFEF2A4089A8005856DB /* RxSwift in Frameworks */,
+				129699C02A45B29C002AF8A3 /* RxRelay in Frameworks */,
+				129699BE2A45B29C002AF8A3 /* RxCocoa in Frameworks */,
+				129699C22A45B29C002AF8A3 /* RxSwift in Frameworks */,
 				12A1EFF22A4089C3005856DB /* SnapKit in Frameworks */,
-				12A1EFED2A4089A8005856DB /* RxRelay in Frameworks */,
-				12A1EFEB2A4089A8005856DB /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124A66FB2A45A9B200A99F9B /* TitleTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				124A66F92A45A9A600A99F9B /* TitleTextFieldCellViewModel.swift */,
+				129699C32A45B5A7002AF8A3 /* TitleTextFieldCell.swift */,
+			);
+			path = TitleTextFieldCell;
+			sourceTree = "<group>";
+		};
+		12697F3A2A4F048D00ABD5AF /* PriceTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				12D5CF152A4B152900BD26E9 /* PriceTextFieldCellViewModel.swift */,
+				12697F382A4EFC1500ABD5AF /* PriceTextFieldCell.swift */,
+			);
+			path = PriceTextFieldCell;
+			sourceTree = "<group>";
+		};
+		12697F3F2A4F084400ABD5AF /* DetailWriteFormCell */ = {
+			isa = PBXGroup;
+			children = (
+				12697F3B2A4F082500ABD5AF /* DetailWriteFormCell.swift */,
+				12697F3D2A4F083C00ABD5AF /* DetailWriteFormCellViewModel.swift */,
+			);
+			path = DetailWriteFormCell;
+			sourceTree = "<group>";
+		};
+		129699C72A45B986002AF8A3 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				129699C52A45B96C002AF8A3 /* Category.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		129699C82A45B9AF002AF8A3 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				124A66F52A459FEC00A99F9B /* MainViewModel.swift */,
+				12697F402A4F1C0200ABD5AF /* MainModel.swift */,
+				12A1EFF32A4089DE005856DB /* MainViewController.swift */,
+				124A66FB2A45A9B200A99F9B /* TitleTextFieldCell */,
+				129699CE2A45BB01002AF8A3 /* CategoryViewController */,
+				12697F3A2A4F048D00ABD5AF /* PriceTextFieldCell */,
+				12697F3F2A4F084400ABD5AF /* DetailWriteFormCell */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		129699C92A45B9CA002AF8A3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				129699C82A45B9AF002AF8A3 /* MainViewController */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		129699CE2A45BB01002AF8A3 /* CategoryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				129699CA2A45BA69002AF8A3 /* CategoryViewModel.swift */,
+				129699CC2A45BAEC002AF8A3 /* CategoryListViewController.swift */,
+			);
+			path = CategoryViewController;
+			sourceTree = "<group>";
+		};
 		12A1EFC92A40896B005856DB = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +152,8 @@
 			children = (
 				12A1EFD52A40896B005856DB /* AppDelegate.swift */,
 				12A1EFD72A40896B005856DB /* SceneDelegate.swift */,
-				12A1EFF32A4089DE005856DB /* MainViewController.swift */,
+				129699C72A45B986002AF8A3 /* Entity */,
+				129699C92A45B9CA002AF8A3 /* Presentation */,
 				12A1EFDE2A40896C005856DB /* Assets.xcassets */,
 				12A1EFE02A40896C005856DB /* LaunchScreen.storyboard */,
 				12A1EFE32A40896C005856DB /* Info.plist */,
@@ -89,10 +178,10 @@
 			);
 			name = UsedGoodsUpload;
 			packageProductDependencies = (
-				12A1EFEA2A4089A8005856DB /* RxCocoa */,
-				12A1EFEC2A4089A8005856DB /* RxRelay */,
-				12A1EFEE2A4089A8005856DB /* RxSwift */,
 				12A1EFF12A4089C3005856DB /* SnapKit */,
+				129699BD2A45B29C002AF8A3 /* RxCocoa */,
+				129699BF2A45B29C002AF8A3 /* RxRelay */,
+				129699C12A45B29C002AF8A3 /* RxSwift */,
 			);
 			productName = UsedGoodsUpload;
 			productReference = 12A1EFD22A40896B005856DB /* UsedGoodsUpload.app */;
@@ -123,8 +212,8 @@
 			);
 			mainGroup = 12A1EFC92A40896B005856DB;
 			packageReferences = (
-				12A1EFE92A4089A8005856DB /* XCRemoteSwiftPackageReference "rxswift" */,
 				12A1EFF02A4089C3005856DB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				129699BC2A45B29C002AF8A3 /* XCRemoteSwiftPackageReference "rxswift" */,
 			);
 			productRefGroup = 12A1EFD32A40896B005856DB /* Products */;
 			projectDirPath = "";
@@ -153,8 +242,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				12A1EFD62A40896B005856DB /* AppDelegate.swift in Sources */,
+				124A66FA2A45A9A600A99F9B /* TitleTextFieldCellViewModel.swift in Sources */,
+				12D5CF162A4B152900BD26E9 /* PriceTextFieldCellViewModel.swift in Sources */,
+				129699CD2A45BAEC002AF8A3 /* CategoryListViewController.swift in Sources */,
+				129699C62A45B96C002AF8A3 /* Category.swift in Sources */,
 				12A1EFD82A40896B005856DB /* SceneDelegate.swift in Sources */,
+				12697F392A4EFC1500ABD5AF /* PriceTextFieldCell.swift in Sources */,
+				12697F3E2A4F083C00ABD5AF /* DetailWriteFormCellViewModel.swift in Sources */,
+				129699CB2A45BA69002AF8A3 /* CategoryViewModel.swift in Sources */,
 				12A1EFF42A4089DE005856DB /* MainViewController.swift in Sources */,
+				12697F412A4F1C0200ABD5AF /* MainModel.swift in Sources */,
+				129699C42A45B5A7002AF8A3 /* TitleTextFieldCell.swift in Sources */,
+				12697F3C2A4F082500ABD5AF /* DetailWriteFormCell.swift in Sources */,
+				124A66F62A459FEC00A99F9B /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +398,6 @@
 				INFOPLIST_FILE = UsedGoodsUpload/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +425,6 @@
 				INFOPLIST_FILE = UsedGoodsUpload/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -366,7 +464,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		12A1EFE92A4089A8005856DB /* XCRemoteSwiftPackageReference "rxswift" */ = {
+		129699BC2A45B29C002AF8A3 /* XCRemoteSwiftPackageReference "rxswift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/reactivex/rxswift.git";
 			requirement = {
@@ -385,19 +483,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		12A1EFEA2A4089A8005856DB /* RxCocoa */ = {
+		129699BD2A45B29C002AF8A3 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 12A1EFE92A4089A8005856DB /* XCRemoteSwiftPackageReference "rxswift" */;
+			package = 129699BC2A45B29C002AF8A3 /* XCRemoteSwiftPackageReference "rxswift" */;
 			productName = RxCocoa;
 		};
-		12A1EFEC2A4089A8005856DB /* RxRelay */ = {
+		129699BF2A45B29C002AF8A3 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 12A1EFE92A4089A8005856DB /* XCRemoteSwiftPackageReference "rxswift" */;
+			package = 129699BC2A45B29C002AF8A3 /* XCRemoteSwiftPackageReference "rxswift" */;
 			productName = RxRelay;
 		};
-		12A1EFEE2A4089A8005856DB /* RxSwift */ = {
+		129699C12A45B29C002AF8A3 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 12A1EFE92A4089A8005856DB /* XCRemoteSwiftPackageReference "rxswift" */;
+			package = 129699BC2A45B29C002AF8A3 /* XCRemoteSwiftPackageReference "rxswift" */;
 			productName = RxSwift;
 		};
 		12A1EFF12A4089C3005856DB /* SnapKit */ = {

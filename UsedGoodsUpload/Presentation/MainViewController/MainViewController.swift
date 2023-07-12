@@ -27,7 +27,61 @@ class MainViewController: UIViewController {
     }
     
     func bind(_ viewModel: MainViewModel) {
-
+        viewModel.cellData
+            .drive(tableView.rx.items) { tv, row, data in
+                switch row {
+                case 0:
+                    let cell = tv.dequeueReusableCell(withIdentifier: "TitleTextFieldCell", for: IndexPath(row: row, section: 0)) as! TitleTextFieldCell    // UITableViewCell -> TitleTextFieldCell
+                    cell.selectionStyle = .none
+                    cell.titleInputField.placeholder = data
+                    cell.bind(viewModel.titleTextFieldCellViewModel)    // TitleTextFieldCell <-> TitleTextFieldCellViewModel
+                    return cell
+                case 1:
+                    let cell = tv.dequeueReusableCell(withIdentifier: "CategorySelectCell", for: IndexPath(row: row, section: 0))
+                    cell.selectionStyle = .none
+                    var content = cell.defaultContentConfiguration()
+                    content.text = data
+                    cell.contentConfiguration = content
+                    cell.accessoryType = .disclosureIndicator   // cell 우측에 >
+                    return cell
+                case 2:
+                    let cell = tv.dequeueReusableCell(withIdentifier: "PriceTextFieldCell", for: IndexPath(row: row, section: 0)) as! PriceTextFieldCell    // UITableViewCell -> PriceTextFieldCell
+                    cell.selectionStyle = .none
+                    cell.priceInputField.placeholder = data
+                    cell.bind(viewModel.priceTextFieldCellViewModel)    // TitleTextFieldCell <-> PriceTextFieldCellViewModel
+                    return cell
+                case 3:
+                    let cell = tv.dequeueReusableCell(withIdentifier: "DetailWriteFormCell", for: IndexPath(row: row, section: 0)) as! DetailWriteFormCell    // UITableViewCell -> DetailWriteFormCell
+                    cell.selectionStyle = .none
+                    cell.contentInputView.text = data
+                    cell.bind(viewModel.detailWriteFormCellViewModel)
+                    return cell
+                default:
+                    fatalError()
+                }
+            }
+            .disposed(by: disposeBag)
+        
+        tableView.rx.itemSelected
+            .map { $0.row }
+            .bind(to: viewModel.itemSelected)
+            .disposed(by: disposeBag)
+        
+        submitButton.rx.tap
+            .bind(to: viewModel.submitButtonTapped)
+            .disposed(by: disposeBag)
+        
+        viewModel.presentAlert
+            .emit(to: self.rx.setAlert)
+            .disposed(by: disposeBag)
+        
+        viewModel.push
+            .drive(onNext: { viewModel in
+                let viewController = CategoryListViewController()
+                viewController.bind(viewModel)
+                self.show(viewController, sender: nil)
+            })
+            .disposed(by: disposeBag)
     }
     
     private func attribute() {
@@ -42,6 +96,11 @@ class MainViewController: UIViewController {
         tableView.separatorStyle = .singleLine
         tableView.backgroundColor = .white
         tableView.tableFooterView = UIView()
+        
+        tableView.register(TitleTextFieldCell.self, forCellReuseIdentifier: "TitleTextFieldCell") // index row 0
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CategorySelectCell")  // index row 1
+        tableView.register(PriceTextFieldCell.self, forCellReuseIdentifier: "PriceTextFieldCell")   // index row 2
+        tableView.register(DetailWriteFormCell.self, forCellReuseIdentifier: "DetailWriteFormCell") // index row 3
     }
     
     private func layout() {
@@ -53,7 +112,7 @@ class MainViewController: UIViewController {
     }
 }
 
-typealias Alert = (title: String, message: String)
+typealias Alert = (title: String, message: String?)
 extension Reactive where Base: MainViewController {
     var setAlert: Binder<Alert> {
         return Binder(base) { base, data in

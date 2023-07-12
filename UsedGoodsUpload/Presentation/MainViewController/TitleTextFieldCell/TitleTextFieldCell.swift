@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 
 class TitleTextFieldCell: UITableViewCell {
-    let disposeBag = DisposeBag ()
+    let disposeBag = DisposeBag()
     let titleInputField = UITextField()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

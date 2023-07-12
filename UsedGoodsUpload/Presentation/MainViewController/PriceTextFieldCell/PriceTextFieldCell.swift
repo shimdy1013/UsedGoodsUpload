@@ -26,7 +26,7 @@ class PriceTextFieldCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func bind(_ viewModel: PriceTextFieldViewModel) {
+    func bind(_ viewModel: PriceTextFieldCellViewModel) {
         viewModel.showFreeShareButton
             .map { !$0 }
             .emit(to: freeShareButton.rx.isHidden)

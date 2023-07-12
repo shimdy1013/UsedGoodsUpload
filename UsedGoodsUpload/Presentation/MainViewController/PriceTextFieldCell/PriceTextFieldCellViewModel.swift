@@ -8,7 +8,7 @@
 import RxSwift
 import RxCocoa
 
-struct PriceTextFieldViewModel {
+struct PriceTextFieldCellViewModel {
     let disposeeBag = DisposeBag()
     
     // ViewModele -> View
